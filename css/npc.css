@@ -1,0 +1,238 @@
+/* zera os valores do box do navegador */
+*,*:before,*:after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-decoration: none;
+}
+body, input,textarea, button{
+	font-family: 'Raleway', sans-serif;
+}		
+/*----------------------------------*/
+
+/* -----Classes suporte-----*/
+
+.fullscreen{ width:100%; height:100vh;}
+.round{ border-radius:100%; }
+.titulo{ padding:14vh 0 5vh 0; text-align:center;}
+.txtCenter{text-align:center;}
+.bgAzul{ background:#00004d;}
+.fontWhite{ color:#fff;}
+.flexbox{ margin-top:2vh; display:flex;	}
+
+/* ------------------------ */
+#menu{
+	z-index:0;
+	text-align:center;
+	height: 50px;
+	width:100%;
+	background:#e5201b; 
+	font-size:20px;
+	overflow: hidden;
+	line-height:45px;		
+}
+#menu ul{ 
+	text-align:center;
+} 
+#menu li{	   
+	display:inline-block;
+}
+#menu a {
+	opacity:1;
+	color:white;
+	margin-left:25px;
+} 
+
+#menu a:hover{		
+	opacity:0.9;
+}
+.navJquery{
+	border-bottom:1px solid #fff;
+}
+.menuFixo {
+	position: fixed;
+	top: 0;
+}
+/*-------- entrada do site -------*/
+.secHome{
+	text-align:center;	 
+	background: url(../img/hd-home.png) fixed;
+	text-shadow:2px 4px 2px black;
+}
+.logo{
+	margin-top:3%;
+	width:48%;
+}
+.secHome a{
+	cursor:pointer;
+}
+.secHome h3{
+	margin-top:3%;
+}
+/*----------------------------------*/
+.secEmpresa{
+	text-align:justify;
+}
+.secEmpresa h1{
+	text-align:left;
+	margin-left:4vw;
+}
+.boxMvv {
+	margin-right:10vw;
+	margin-top:4vh;
+	width:30vw;
+	height:19vh;
+	border-left: 1.6px solid #000033;
+	padding:1vh 0 0 2vw;
+	float:right;
+	clear:right;
+	text-align:justify;
+}
+.boxMvv:first-child{
+	margin-top:-6vh;
+}
+.boxMvv p,li{
+	font-size:1.3em;
+}
+.boxDescEmp{
+	margin-left:5vw;
+	margin-top:2vh;
+	width:40vw;
+	height:auto;
+	font-size:1.5em;
+	border-left: 2px solid #000033;
+	padding: 2%;
+	float:left;
+}
+/*-------------------------*/
+
+.boxServico{		
+	margin-left:3%;
+	width:16vw;
+	height:55vh;
+	border: 2px solid red;
+	padding: 2%;
+	display:inline-block;
+}
+.boxServico h2{
+	text-align:center;
+	padding:2%;
+}
+.bottomline{
+	margin: 0 0 2vh 0;
+	border-bottom:1px solid white;
+}
+
+.boxServico p{
+	font-size:1.1em;
+	text-align:center;
+	padding:2%;
+}
+/* -------------- */
+.boxEquipe{		
+	margin-left:1.5vw;
+	width:15vw;
+	height:55vh;
+	border:2px solid #00004d;
+	padding: 1%;
+}
+.boxEquipe:first-child{
+	margin-left:0.5vw;
+}
+.boxEquipe img{
+	width:100%;
+}
+.boxEquipe h3{
+	border-bottom:2px solid #00004d;
+}
+/*---------------------------------------*/
+
+.secContato{
+	height:80vh;
+}
+form{ 
+	margin-left:30%;
+	width:40%;
+	display:table;
+	padding:0 1% 1% 1%;	
+}
+form input{
+	margin-top:1%;
+	float:left;
+	clear:both;
+	font-size:1em;
+	width:100%;
+	height:28px;
+}
+form textarea{
+	width:100%;
+	margin-top:1%;
+	float:left;
+	clear:both;
+	font-size:1.2em;
+}
+form button{
+	margin-top:1%;
+	margin-left:1%;
+	float:left;
+}
+.botao {
+	padding: 6px 12px;  
+	text-align: center;
+	vertical-align: middle;    
+	background-color: #fa231d;
+	border:1px solid black;
+	box-shadow: 3px 3px 3px black;
+}
+.botao:focus, .botao:active {
+	color: black;
+	box-shadow:none;
+}
+
+/* ------------------------ */
+footer{
+	width:100%;
+	height:20vh;
+	padding:2% 0;
+	display: inline-block;
+	text-align:center;
+}
+footer h4 {
+	margin-top:2vh;
+}
+footer h5{
+	margin-top:2vh;
+}
+footer h6{
+margin-top:1vh;
+	opacity:0.6;
+}
+
+/* Link BackToTop */
+
+#backToTop{
+	position:fixed;
+	visibility:hidden;
+	bottom:20px;
+	right:20px; 
+	width:36px;
+	height:36px;
+	line-height:36px; 
+	text-align:center;
+}
+#backToTop i{
+border:1px solid red;
+margin:4px;
+display:block;
+width:100%;
+height:100%;
+line-height:inherit;
+}
+#backToTop.visible{
+visibility:visible;
+opacity:0.7;
+}
+#backToTop:hover{
+opacity:1;
+}
