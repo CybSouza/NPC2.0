@@ -180,17 +180,17 @@
 		<a href="#top" id="backToTop"><i class=" fa fa-chevron-up"></i></a>
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script>
-		jQuery("#backToTop").click(function(){
-			jQuery("body,html").animate({scrollTop: 0}, 3500);
+		$("#backToTop").click(function(){
+			$("body,html").animate({scrollTop: 0}, 3500);
 		});
 		
 		//trata a visibilidade do botão ScrollTop
-		jQuery(window).scroll(function (){
-			if (jQuery(window).scrollTop() > 150){
-				jQuery("#backToTop").addClass("visible");
+		$(window).scroll(function (){
+			if ($(window).scrollTop() > 150){
+				$("#backToTop").addClass("visible");
 			}
 			else{
-				jQuery("#backToTop").removeClass("visible");
+				$("#backToTop").removeClass("visible");
 			}
 		});
 		
@@ -248,7 +248,7 @@
 });
 
 	$('#btn').click(function(){
-		alert("mensagem enviada com sucesso!");
+		alert("obrigado por visitar a página!");
 	});
 		</script>   		
 	</body>
